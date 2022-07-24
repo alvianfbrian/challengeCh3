@@ -1,0 +1,448 @@
+@font-face {
+    font-family: bebasNeue;
+    src: url(/font/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: openSans;
+    src: url(/font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* Root Styling */
+* {
+    font-family: openSans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+body {
+    background-image: url(/assets/newsletter.png);
+    font-size: 18px;
+}
+.subtext {
+    font-size: 14px;
+}
+button {
+    font-size: 16px;
+    font-weight: bold;
+}
+a, h1, h2, h3, p {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* NavBar Styling */
+nav.navbar {
+    background: rgba(0, 0, 0, 0.5);
+}
+div.offcanvas {
+    background: rgba(0, 0, 0, 0.9);
+}
+div.offcanvas::after {
+    transition: 0.2ms;
+}
+button.btn-close {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+button.navbar-toggler {
+    border-radius: 10px;
+}
+button.navbar-toggler:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+.nav-link {
+    color: white;
+}
+a.nav-link.signup:hover {
+    color: rgba(248, 178, 61, 1);
+}
+a.nav-link.login:hover {
+    color: rgb(61, 142, 248);
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;   
+}
+body nav div {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Section 1 Styling */
+div.section1 h1 {
+    font-weight: bold;
+}
+div.section1 {
+    background-image: url(/assets/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 15.5rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;
+}
+button#main-button {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    border-radius: 5px;
+    --bs-btn-bg: rgba(248, 178, 61, 1);
+    --bs-btn-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-padding-y: 1.2rem;
+    --bs-btn-padding-x: 5.7rem;
+    --bs-btn-font-size: 1rem;
+}
+button#main-button:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 5px rgba(248, 178, 61, 0.5);
+    --bs-btn-hover-bg: rgba(248, 178, 61, 1);
+}
+p.subtext.mt-5.mb-0 {
+    font-weight: 300;
+    padding-top: 11rem;
+}
+div.container-lg.text-center img{
+    margin-top: -0.5rem;
+}
+
+/* Section 2 Styling */
+div.section2 h1 {
+    font-weight: 400;
+}
+div.section2 {
+    background-image: url(/assets/the-games-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 14.5rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;   
+}
+div.section2 div.col-lg-4, div.col-lg-8 {
+    padding: 0;
+}
+div.carousel-indicators button#carouselIndicator {
+    width: 13px;
+    height: 13px;
+    margin: 0 1.5em 0 1.5em;
+    background-color: transparent;
+    opacity: 1;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 100px;
+}
+div.carousel-indicators button#carouselIndicator:hover {
+    opacity: 0.5;
+    transition: 0.1s;
+}
+div.carousel-indicators button#carouselIndicator.active {
+    background-color: white;
+}
+
+/* Section 3 Styling */
+div.section3 {
+    background-image: url(/assets/features.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 11rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;   
+}
+div.col-6.text::before {
+    content: '';
+    position: absolute;
+    height: 130px;
+    width: 1px;
+    margin: 11em 0 0 0.5em;
+    background-color: white;
+}
+div.col-6.text ul li {
+    list-style-type: circle;
+}
+div.col-6.text ul li:nth-child(1) {
+    list-style-type: disc;
+}
+div.col-6.text ul li::marker {
+    color: white;
+    font-size: 2rem;
+}
+div.col-6.text ul li h3 {
+    color: rgba(248, 178, 61, 1);
+    margin-top: 2em;
+}
+/* Section 4 Styling */
+div.section4 h1 {
+    font-weight: 400;
+}
+div.section4 {
+    background-image: url(/assets/requirements.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 9rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;   
+}
+div.section4 div.container-lg p.subtext.text-center.mb-5 {
+    margin-bottom: 3rem !important;
+}
+table.table.table-bordered {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+th {
+    font-weight: normal;
+    color: white;
+}
+th h3 {
+    color: rgba(248, 178, 61, 1);
+}
+
+/* Section 5 Styling */
+div.section5 h1 {
+    font-weight: 400;
+}
+div.section5 {
+    background-image: url(/assets/top-score-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;   
+}
+h5.card-title {
+    color: rgba(248, 178, 61, 1);
+}
+h6.card-subtitle {
+    color:rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+div.card {
+    border-radius: 10px;
+}
+div.card:nth-child(odd) {
+    float: right;
+}
+div.col-md-3 img {
+    height: 4em;
+    width: 4em;
+    box-shadow: 6px 2px 0 2px rgba(248, 178, 61, 1);
+    border-radius: 100%;
+}
+div.col-md-12 p.card-text.subtext {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Section 6 Styling */
+div.section6 h1, h3{
+    font-weight: 400;
+}
+div.section6 {
+    background-image: url(/assets/newsletter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10rem 1rem 0 1rem;
+    height: 60rem;
+    width: 100%;   
+}
+div.section6 div.row div.col-5 {
+    background-image: url(/assets/skull.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+form.row {
+    margin-top: 6rem;
+}
+div.form-floating {
+    width: 22rem;
+}
+div.form-floating input[type="email"] {
+    background-color: rgba(33, 37, 41, 1);
+    border-color: rgba(33, 37, 41, 0.5);
+    color: rgba(248, 178, 61, 1);
+}
+div.form-floating input[type="email"]:focus {
+    box-shadow: 0 0 10px 5px rgba(248, 178, 61,0.5);
+    transition: 0.3s;
+}
+div.form-floating label {
+    padding-left: 1.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+button#sub-button {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    border-radius: 5px;
+    --bs-btn-bg: rgba(248, 178, 61, 1);
+    --bs-btn-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-padding-y: 1.2rem;
+    --bs-btn-padding-x: 3.7rem;
+    --bs-btn-font-size: 1rem;
+}
+button#sub-button:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 5px rgba(248, 178, 61, 0.5);
+    --bs-btn-hover-bg: rgba(248, 178, 61, 1);
+}
+
+/* Footer Styling */
+div.footer {
+    background-image: url(/assets/newsletter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.footer li.nav-item a {
+    color: white;
+}
+div.footer {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    list-style: none;
+    flex-direction: row;
+}
+footer p.text-start {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Phone Styling */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+
+    /* NavBar Styling */
+    body nav div {
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    div.container-fluid.justify-content-between.mx-5.px-5.py-3 {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    div.offcanvas {
+        width: 300px !important;
+    }
+
+    /* Section 1 Styling */
+    div.section1 {
+        margin: 0;
+        padding: 9rem 1rem 0 1rem;
+        height: 60rem;
+        width: 100%;
+    }
+    button#main-button {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0;
+        border-radius: 5px;
+        --bs-btn-bg: rgba(248, 178, 61, 1);
+        --bs-btn-border-color: none;
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-padding-y: 1.2rem;
+        --bs-btn-padding-x: 5.7rem;
+        --bs-btn-font-size: 1rem;
+    }
+    p.subtext.mt-5.mb-0 {
+        font-weight: 300;
+        padding-top: 12rem;
+    }
+
+    /* Section 2 Styling */
+    div.section2 h1 {
+        font-weight: 400;
+    }
+    div.carousel-indicators button#carouselIndicator {
+        border-color: transparent;
+    }
+
+    /* Section 3 Styling */
+    div.section3 {
+        padding: 11rem 1rem 0 1rem;
+        height: 60rem;
+        width: 100%; 
+    }
+    div.row div.col-6.text {
+        margin-left: -4.5rem;
+    }
+    div.col-6.text::before {
+        height: 135px;
+        margin: 7em 0 0 0.5em;
+        background-color: transparent;
+    }
+    div.row div.col-6 li {
+        list-style-type: circle;
+    }
+    div.row div.col-6 li h3 {
+        color: rgba(248, 178, 61, 1);
+        margin-top: 2em;
+    }
+
+    /* Section 4 Styling */
+    div.section4 h1 {
+        font-size: 2.6rem;
+    }
+    
+    /* Section 5 Styling */
+    div.section5 {
+        padding: 11rem 1rem 0 1rem;
+    }
+    div.section5 button {
+        margin-top: 1rem !important;
+    }
+    div.col-6 div.card.text-bg-dark {
+        display: none !important;
+    }
+
+    /* Section 6 Styling */
+    div.section6 div.row div.col-5 {
+        background-image: none;
+        display: none;
+    }
+    div.section6 div.row div.col-7 {
+        padding-left: 0 !important;
+        width: 100%;
+    }
+    form div.form-floating {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    div.col-12 #sub-button {
+        width: 100%;
+    }
+}
